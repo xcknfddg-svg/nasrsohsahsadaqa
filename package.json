@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0 --port 3000",
-    "build": "vite build && cp -r assets data fonts images audio public/* dist/ 2>/dev/null || true && cp index.html dist/index.html",
+    "build": "vite build",
     "build:web": "npm run build",
     "build:app": "npm run build && npx cap sync android",
     "lint": "echo 'No lint errors'",

@@ -1,0 +1,18 @@
+{
+  "short_name": "نصر صحصاح",
+  "name": "صدقة جارية عن روح الأستاذ نصر صحصاح",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#090d16",
+  "theme_color": "#090d16",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "ar",
+  "dir": "rtl"
+}
