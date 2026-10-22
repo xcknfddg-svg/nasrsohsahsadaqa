@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ar" dir="rtl" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    
+    <!-- Instant Dark Mode Init: Eliminates any flash or delay on page load -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('sadaqah_theme');
+          // Default is strictly dark unless user explicitly chose light
+          if (saved === 'light') {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+          } else {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+            if (saved !== 'dark') {
+              localStorage.setItem('sadaqah_theme', 'dark');
+            }
+          }
+        } catch (e) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+
+    <meta name="theme-color" content="#090d16" />
+    <title>صدقة جارية عن روح الأستاذ نصر صحصاح</title>
+    <meta name="description" content="موقع إسلامي متكامل كصدقة جارية عن روح الأستاذ نصر صحصاح رحمه الله، يضم المصحف الشريف كاملاً، الاستماع لأشهر القراء، الأدعية المأثورة، حصن المسلم والأذكار، الرقية الشرعية، والسبحة الإلكترونية." />
+    <meta property="og:title" content="صدقة جارية عن روح الأستاذ نصر صحصاح" />
+    <meta property="og:description" content="موقع إسلامي متكامل كصدقة جارية عن روح الأستاذ نصر صحصاح رحمه الله، يضم المصحف الشريف كاملاً، الاستماع لأشهر القراء، الأدعية المأثورة، حصن المسلم والأذكار، الرقية الشرعية، والسبحة الإلكترونية." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Progressive Web App (PWA) Standards -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="الأستاذ نصر" />
+    <meta name="application-name" content="الأستاذ نصر" />
+    
+    <!-- Icons & Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Early Global PWA Install Prompt Listener -->
+    <script>
+      window.__pwaDeferredPrompt = null;
+      window.addEventListener('beforeinstallprompt', function(e) {
+        e.preventDefault();
+        window.__pwaDeferredPrompt = e;
+        window.dispatchEvent(new CustomEvent('pwa_prompt_available'));
+      });
+      window.addEventListener('appinstalled', function() {
+        window.__pwaDeferredPrompt = null;
+        window.dispatchEvent(new CustomEvent('pwa_installed'));
+      });
+    </script>
+    <script type="module" crossorigin src="/assets/index-GeBvl8XG.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CsPVCblb.css">
+  <link rel="manifest" href="/manifest.webmanifest"></head>
+  <body class="bg-[#090d16] text-gray-100 antialiased selection:bg-amber-600/30 selection:text-amber-200 min-h-screen">
+    <div id="root"></div>
+  </body>
+</html>
+
